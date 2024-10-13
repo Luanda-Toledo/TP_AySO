@@ -1,0 +1,49 @@
+ssh-keygen
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit
+cd repogit/
+git clone git@github.com:Luanda-Toledo/TP_AySO.git
+ls -l
+pdw
+pwd
+cd TP_AySO/
+cat /etc/os-release
+grep -i HOME_URL /etc/os-release
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+ls -l
+cd datos_usuario.txt
+cd datos_usuario
+cat datos_usuario.txt
+git add .
+git config --global user.email luandatoledoviera@outlook.es
+git config --global user.name Luanda-Toledo
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+grep "model name" /proc/cpuinfo | head -n 1 >> archivo.txt
+cat archivo.txt
+git add .
+git status
+git commit -m "feat: Añadiendo información de CPU"
+git status
+grep -v "nologin" /etc/passwd | head -n 10 | sort -t ':' -k 7 > lista_ordenada
+cat lista_ordenada 
+git add .
+git status
+git commit -m "ADD: Listado de usuarios ordenada"
+git status
+echo "Comando para buscar: man -k network traffic" >> comando_dump_net
+git add .
+git status
+git commit -m "ADD: Comando para Capturar y analizar el tráfico de red"
+git status
+echo -e "Alumno: Luanda Toledo\nDivisión: 314\nTurno: Noche" >> README.md
+cat README.md 
+echo -e "\nAlumno: Luanda Toledo\nDivisión: 314\nTurno: Noche" > README.md
+cat README.md 
+git add .
+git status
+git commit -m "Modificar readme cn info personal"
+git status
+history -a ~/.bash_history
